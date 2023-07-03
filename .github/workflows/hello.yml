@@ -1,0 +1,17 @@
+name: Hello!
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  saludo_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PrintDate
+        run: |
+          echo "The current date is $(date)"
+      - name: ListEnviroment
+        run: |
+            ls -l     
